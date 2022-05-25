@@ -7,8 +7,8 @@ body {
 section {
     display: flex;
     justify-content: center;
-    justify-items: center;
-    margin: 1rem auto;
+    /* justify-items: center; */
+    margin: 1rem;
 }
 button {
     margin: .5rem;
@@ -35,6 +35,7 @@ h4 {
     justify-items: center;
     border: 5px solid #638C99;
     padding: 1rem;  
+    width: 100%;
 }
 .delete-section {
     display: grid;
@@ -44,6 +45,7 @@ h4 {
     border: 5px solid #E6C3CC;
     margin: 1rem;
     text-align: center;
+    width: 100%;
 }
 .text-center {
     text-align: center;
@@ -116,6 +118,7 @@ h4 {
 .rank-input {
     width: 13rem;
     padding: .5rem;
+    margin: 1rem;
 }
 
 .header-emoji-display-wrapper{
@@ -175,6 +178,11 @@ h4 {
         margin: 1rem;
         text-align: center;
     }
+    .rank-input {
+        width: 13rem;
+        padding: .5rem;
+        margin: 3rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -191,11 +199,5 @@ h4 {
     }
     .delete-section {
         display: grid;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        border: 5px solid #E6C3CC;
-        padding: 1rem;
-        text-align: center;
     }
 }
