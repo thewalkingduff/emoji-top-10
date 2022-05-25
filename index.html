@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Emojis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="header-emoji-display-wrapper">
+        <h1 class="text-center">Show Your TOP 10 Fav Emojis!</h1>
+
+   
+        <div id="display-emojis" class="display-emojis-div"></div>
+    </section>
+    <section>
+            <section class="add-section">
+                <div class="emoji-btns-wrapper blue-border-bottom">
+                    <h4>Quickly Add a Common Emoji:</h4>
+                    <button class="quick-emoji-buttons" id="happy-emoji-btn">🙂</button>
+                    <button class="quick-emoji-buttons"
+                    id="sad-emoji-btn">🙁</button>
+                    <button class="quick-emoji-buttons"
+                    id="silly-emoji-btn">🤪</button>
+                    <button class="quick-emoji-buttons"
+                    id="angry-emoji-btn">😡</button>
+                </div>
+                <h4 class="blue-header">Enter Any Emoji Here!</h4>
+                <div id="input-div" class="text-center">
+                    <input type="text" placeholder="Enter emoji" id="emoji-input"
+                    class="emoji-input">
+                </div>
+                <div class="add-btns-wrapper">
+                    <button id="add-front-btn" class="add-btns">Add to First</button>
+                    <button id="add-end-btn" class="add-btns">Add to Last</button>
+                </div>
+                <div class="add-btns-wrapper">
+                    <h4>Add Emoji to Specific Rank:</h4>
+                    <div class="input-margin">
+                        <input type="text" placeholder="Enter Rank Number" class="rank-input"
+                        id="add-rank-input">
+                    </div>
+                    <div>
+                        <button class="add-btns"
+                        id="add-to-specific-rank">Add to Specific Rank</button>
+                    </div>   
+                </div>
+            </section>
+            <section class="delete-section ">
+                <div class="div-padding">
+                    <h4 class="red-header no-margin-bottom">Caution! Delete Section!</h4>
+                    <div class="light-pink-border-bottom">
+                        <button id="remove-first-btn"
+                        class="remove-btns"
+                        >Remove First Emoji
+                        </button>
+                        <button id="remove-last-btn"
+                        class="remove-btns last-remove-btn"
+                        >Remove Last Emoji
+                        </button>
+                    </div>
+                </div>
+                
+                <h4
+                class="red-header" >
+                Delete a Specific Emoji: 
+                 </h4>
+                <div >
+                   
+                    <input type="text" placeholder="Enter Rank Number" class="rank-input"
+                    id="remove-input">
+                    <button id="remove-specific-emoji-btn"
+                    class="remove-btns"
+                    >Remove Emoji
+                    </button>
+                    
+                </div>
+                <div class="light-pink-border-top div-padding">
+                    <h4 class="red-header">DELETE EVERYTHING!</h4>
+                    <button id="delete-all" class="delete-all">Delete All</button>
+                </div>
+            </section>
+            
+            
+        
+   
+
+    </section>
+ 
+    <script src="app.js"></script>
+</body>
+</html>

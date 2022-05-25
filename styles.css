@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap');
+
+body {
+    background:  #E6E095;
+    font-family: 'Oswald', sans-serif;
+}
+section {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 1rem auto;
+}
+button {
+    margin: .5rem;
+    padding: .6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+
+}
+h1 {
+    font-size: 3rem;
+    color: #638C99;
+    margin: 1rem;
+    text-transform: capitalize;
+}
+h4 {
+    font-size: 1.5rem;
+    color: #638C99;
+    margin: .5rem;
+    text-transform: capitalize;
+}
+.add-section {
+    display: grid;
+    justify-items: center;
+    border: 5px solid #638C99;
+    padding: 1rem;  
+}
+.delete-section {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 5px solid #E6C3CC;
+    margin: 1rem;
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+}
+.add-btns {
+    background: #638C99;
+    color: #FAF9F6;
+    opacity: 70%;
+}
+.add-btns:hover {
+    opacity: 100%;
+}
+.remove-btns {
+    background: #E6C3CC;
+    color: black;
+    opacity: 70%;
+    margin-top: 1rem;
+}
+.remove-btns:hover {
+    opacity: 100%;
+}
+.delete-all {
+    background: red;
+    color: #FAF9F6;
+    opacity: 60%;
+}
+.delete-all:hover {
+    opacity: 100%;
+}
+.display-emojis-div {
+    background: #ADD8E6;
+    height: 15%;
+    width: 85%;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 2px solid #638C99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   
+}
+.emoji-input {
+    padding: .5rem .75rem;
+    background: #FAF9F6;
+    margin: .65rem;
+    border-color: #638C99;
+}
+.quick-emoji-buttons {
+    background:  #FAF9F6 ;
+    border: 2px solid #638C99;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+}
+.quick-emoji-buttons:hover {
+    background: #638C99;
+}
+.emoji-btns-wrapper {
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    text-align: center;   
+}  
+.blue-header {
+    color: #638C99;
+}
+.red-header {
+    color: red;
+
+}
+.rank-input {
+    width: 13rem;
+    padding: .5rem;
+}
+
+.header-emoji-display-wrapper{
+    display: grid;
+    justify-content: center;
+}
+.add-btns-wrapper {
+    text-align: center;
+
+}
+.light-pink-border-top {
+    border-top: 5px dashed #E6C3CC;
+    width: 85%;
+    padding: 1rem;
+}
+.light-pink-border-bottom {
+    border-bottom: 5px dashed #E6C3CC;
+    width: 85%;
+    padding: 1rem;
+}
+.blue-border-bottom {
+    border-bottom: 5px dashed #638C99;
+    width: 95%;
+}
+.last-remove-btn {
+    margin-bottom: 1rem;
+}
+.input-margin {
+    margin: 1rem 0 .4rem;
+}
+.div-padding {
+    padding: 1rem;
+}
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .display-emojis-div {   
+        width: 65%;
+        margin: .5rem;
+        font-size: 1rem; 
+    }
+    section {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        margin: 1rem auto;
+    }
+    .delete-section {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 5px solid #E6C3CC;
+        padding: 4.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .display-emojis-div {   
+        width: 65%;
+        margin: .5rem;
+        font-size: 1rem; 
+    }
+    section {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        margin: 1rem auto;
+    }
+    .delete-section {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border: 5px solid #E6C3CC;
+        padding: 1rem;
+        text-align: center;
+    }
+}
