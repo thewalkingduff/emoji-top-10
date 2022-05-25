@@ -88,7 +88,8 @@ h4 {
     align-items: center;
     justify-content: center;
     justify-items: flex-start;
-    text-align: center;   
+    text-align: center;  
+    color: #638C99; 
 }
 .emoji-input {
     padding: .5rem;
