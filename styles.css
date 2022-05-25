@@ -91,7 +91,7 @@ h4 {
     text-align: center;   
 }
 .emoji-input {
-    padding: .5rem .75rem;
+    padding: .5rem;
     background: #FAF9F6;
     margin: .65rem;
     border-color: #638C99;
@@ -118,9 +118,11 @@ h4 {
 
 }
 .rank-input {
-    width: 13rem;
+    width: 8rem;
     padding: .5rem;
-    margin: 1rem;
+    margin: .5rem;
+    background: #FAF9F6;
+    border-color: #638C99;
 }
 
 .header-emoji-display-wrapper{
@@ -154,6 +156,8 @@ h4 {
 }
 .div-padding {
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .no-margin-bottom {
     margin-bottom: 0;
@@ -181,9 +185,8 @@ h4 {
         width: 75%;
     }
     .rank-input {
-        width: 13rem;
-        padding: .5rem;
-        margin: 3rem;
+        padding: .5rem 0;
+        margin: 1rem;
     }
     .light-pink-border-top {
         width: 65%;
