@@ -20,6 +20,12 @@ const sillyEmojiBtn = document.querySelector('#silly-emoji-btn')
 const angryEmojiBtn = document.querySelector('#angry-emoji-btn')
 
 let emojis = []
+const emojisFromLocalStorage = JSON.parse(localStorage.getItem('emojis'))
+
+if(emojisFromLocalStorage) {
+    emojis = emojisFromLocalStorage
+    renderEmojis()
+}
 
 function renderEmojis() {
     emojiDiv.innerHTML = ''
@@ -35,73 +41,73 @@ function renderEmojis() {
 addToFrontBtn.addEventListener('click', () => {
     if(emojis.length < 10){
     emojis.unshift(emojiInput.value)
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
     }
 })
 addToEndBtn.addEventListener('click', () => {
     if(emojis.length < 10){
     emojis.push(emojiInput.value)
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
     }
 })
 addAtSpecificRank.addEventListener('click', () => {
     emojis.splice(addRankInput.value - 1, 0, emojiInput.value)
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
 })
 
 // remove:
 removeFirstBtn.addEventListener('click', () => {
     emojis.shift()
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
 })
 removeLastBtn.addEventListener('click', () => {
     emojis.pop()
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
 })
 deleteAllBtn.addEventListener('click', () => {
     emojiDiv.innerHTML = ''
+    localStorage.clear()
     emojis = []
     emojiInput.value = ''
-    console.log(emojis);
 })
 removeSpecificEmojiBtn.addEventListener('click', () => {
     emojis.splice(removeInput.value - 1, 1)
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
 })
 
 // quick default emoji buttons:
 happyEmojiBtn.addEventListener('click', () => {
     if(emojis.length < 10){
     emojis.push('🙂')
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
     }
 })
 sadEmojiBtn.addEventListener('click', () => {
     if(emojis.length < 10){
     emojis.push('🙁')
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
     }
 })
 sillyEmojiBtn.addEventListener('click', () => {
     if(emojis.length < 10){
     emojis.push('🤪')
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
     }
 })
 angryEmojiBtn.addEventListener('click', () => {
     if(emojis.length < 10){
     emojis.push('😡')
+    localStorage.setItem('emojis', JSON.stringify(emojis))
     renderEmojis()
-    console.log(emojis);
     }
 })
 
