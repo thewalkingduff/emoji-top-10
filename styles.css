@@ -7,7 +7,6 @@ body {
 section {
     display: flex;
     justify-content: center;
-    /* justify-items: center; */
     margin: 1rem;
 }
 button {
@@ -17,7 +16,6 @@ button {
     border-radius: 5px;
     border: none;
     font-size: 1rem;
-
 }
 h1 {
     font-size: 3rem;
@@ -78,8 +76,6 @@ h4 {
 }
 .display-emojis-div {
     background: #ADD8E6;
-    /* height: 65%;
-    width: 100%; */
     margin: 1rem;
     padding: 3rem 10rem;
     font-size: 2.5rem;
@@ -116,7 +112,6 @@ h4 {
 }
 .red-header {
     color: red;
-
 }
 .rank-input {
     width: 8rem;
@@ -125,7 +120,6 @@ h4 {
     background: #FAF9F6;
     border-color: #638C99;
 }
-
 .header-emoji-display-wrapper{
     display: grid;
     justify-content: center;
